@@ -7,6 +7,8 @@
         <entry key="..\:/Gemini Task/PatientSignUpForm/app/src/main/res/drawable/btn_secondary.xml" value="0.165" />
         <entry key="..\:/Gemini Task/PatientSignUpForm/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Gemini Task/PatientSignUpForm/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Gemini Task/PatientSignUpForm/app/src/main/res/layout/fragment_calendar.xml" value="0.25" />
+        <entry key="..\:/Gemini Task/PatientSignUpForm/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
         <entry key="..\:/Gemini Task/PatientSignUpForm/app/src/main/res/layout/fragment_register.xml" value="0.25" />
         <entry key="..\:/Gemini Task/PatientSignUpForm/app/src/main/res/menu/navigation_bottom.xml" value="0.25" />
       </map>

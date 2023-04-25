@@ -32,9 +32,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginLeft="@dimen/dimen_22"
+        android:layout_marginLeft="@dimen/dimen_18"
         android:layout_marginTop="@dimen/dimen_16"
-        android:layout_marginRight="@dimen/dimen_22"
+        android:layout_marginRight="@dimen/dimen_18"
         android:gravity="center"
         android:text="@string/login_subtitle"
         android:textColor="@color/lightest_black"
@@ -60,7 +60,7 @@
             android:maxLines="2"
             android:text="@string/phone_number"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_16" />
+            android:textSize="@dimen/dimen_18" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -83,7 +83,9 @@
                 android:id="@+id/etPhoneNumber"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:textColor="@color/black"
                 android:background="@drawable/flag_transparent"
+                android:textColorHint="@color/lightest_black"
                 android:hint="@string/phone_number_hint"
                 android:textSize="@dimen/dimen_18" />
 
@@ -94,12 +96,12 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimen_50"
             android:layout_marginLeft="@dimen/dimen_15"
-            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_16"
             android:layout_marginRight="@dimen/dimen_15"
             android:background="@drawable/btn_primary"
             android:text="Log In"
             android:textAlignment="center"
-            android:textAllCaps="true"
+            android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="@dimen/dimen_20"
             android:textStyle="bold" />

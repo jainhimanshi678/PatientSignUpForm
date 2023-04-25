@@ -22,11 +22,10 @@
             android:id="@+id/bnvMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/black"
             app:menu="@menu/navigation_bottom"
-            app:itemIconTint="@color/black"
             app:labelVisibilityMode="unlabeled"
-            app:itemBackground="@color/white"/>
+            app:itemIconTint="@color/bottom_nav_selector"
+            app:itemBackground="@color/lightest_black"/>
 
     </LinearLayout>
 

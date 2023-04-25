@@ -14,6 +14,7 @@
     <dimen name="dimen_50">50dp</dimen>
     <dimen name="btn_width">150dp</dimen>
     <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_110">110dp</dimen>
     <dimen name="dimen_24">24dp</dimen>
     <dimen name="dimen_30">30dp</dimen>
     <dimen name="dimen_20">20dp</dimen>

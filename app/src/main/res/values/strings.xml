@@ -15,4 +15,8 @@
     <string name="email">E-Mail</string>
     <string name="address">Address</string>
     <string name="pincode">Pincode</string>
+    <string name="current_location">Use my current location</string>
+    <string name="agreement">I Agree to the terms and conditions</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
 </resources>
