@@ -9,6 +9,7 @@
     tools:context=".views.LoginActivity">
 
     <ImageView
+        android:layout_marginTop="@dimen/dimen_16"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/login_image" />
@@ -32,51 +33,76 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginLeft="@dimen/dimen_22"
-        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_16"
         android:layout_marginRight="@dimen/dimen_22"
         android:gravity="center"
         android:text="@string/login_subtitle"
-        android:textColor="@color/light_black"
+        android:textColor="@color/lightest_black"
         android:textSize="@dimen/dimen_16" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="@dimen/dimen_25"
-        android:layout_marginTop="@dimen/dimen_40"
-        android:layout_marginRight="@dimen/dimen_25"
-        android:gravity="center"
-        android:maxLines="2"
-        android:text="@string/phone_number"
-        android:textColor="@color/black"
-        android:textSize="@dimen/dimen_16"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_50"
-        android:background="@drawable/btn_secondary"
-        android:orientation="horizontal"
-        android:layout_marginTop="@dimen/dimen_10"
-        android:layout_marginLeft="@dimen/dimen_15"
-        android:layout_marginRight="@dimen/dimen_15">
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:orientation="vertical">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_25"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginRight="@dimen/dimen_25"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/phone_number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_16" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:background="@drawable/btn_secondary"
+            android:orientation="horizontal">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/cpCode"
+                android:layout_width="@dimen/dimen_135"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/flag_transparent"
+                android:hint="@string/phone_number_hint"
+                android:textSize="@dimen/dimen_16" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:background="@drawable/btn_primary"
+            android:text="Log In"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_20"
+            android:textStyle="bold" />
 
     </LinearLayout>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_50"
-        android:background="@drawable/btn_primary"
-        android:text="Log In"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:layout_marginTop="@dimen/dimen_10"
-        android:layout_marginLeft="@dimen/dimen_15"
-        android:layout_marginRight="@dimen/dimen_15"
-        android:textColor="@color/white"
-        android:textSize="@dimen/dimen_20"
-        android:textStyle="bold" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
