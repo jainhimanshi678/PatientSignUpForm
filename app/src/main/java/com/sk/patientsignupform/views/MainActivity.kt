@@ -1,7 +1,8 @@
-package com.sk.patientsignupform
+package com.sk.patientsignupform.views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.sk.patientsignupform.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

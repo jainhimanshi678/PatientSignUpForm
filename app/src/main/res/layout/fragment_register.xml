@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/register_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/fullname"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:textSize="@dimen/dimen_16"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45"
+            android:background="@drawable/btn_secondary"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:textSize="@dimen/dimen_16"
+            android:padding="@dimen/dimen_10"
+            android:hint="Enter Name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/gender"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:textSize="@dimen/dimen_16"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45"
+            android:background="@drawable/btn_secondary"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:textSize="@dimen/dimen_16"
+            android:padding="@dimen/dimen_10"
+            android:hint="Enter Name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:textSize="@dimen/dimen_16"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45"
+            android:background="@drawable/btn_secondary"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:textSize="@dimen/dimen_16"
+            android:padding="@dimen/dimen_10"
+            android:hint="Enter Mail Id"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/address"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:textSize="@dimen/dimen_16"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_80"
+            android:background="@drawable/btn_secondary"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="left"
+            android:textSize="@dimen/dimen_16"
+            android:padding="@dimen/dimen_10"
+            android:hint="@string/address"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/pincode"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:textSize="@dimen/dimen_16"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45"
+            android:background="@drawable/btn_secondary"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:textSize="@dimen/dimen_16"
+            android:padding="@dimen/dimen_10"
+            android:hint="@string/pincode"/>
+
+    </LinearLayout>
+
+</FrameLayout>
