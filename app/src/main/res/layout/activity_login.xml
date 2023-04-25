@@ -46,7 +46,6 @@
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
         android:layout_marginBottom="@dimen/dimen_20"
-        android:gravity="bottom"
         android:orientation="vertical">
 
         <TextView
@@ -83,6 +82,7 @@
                 android:id="@+id/etPhoneNumber"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:lines="1"
                 android:textColor="@color/black"
                 android:background="@drawable/flag_transparent"
                 android:textColorHint="@color/lightest_black"

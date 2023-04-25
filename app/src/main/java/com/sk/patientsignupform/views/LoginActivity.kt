@@ -4,8 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.sk.patientsignupform.MainActivity
 import com.sk.patientsignupform.databinding.ActivityLoginBinding
+import com.sk.patientsignupform.utils.PrefUtil
 
 class LoginActivity : AppCompatActivity() {
 
@@ -38,7 +38,11 @@ class LoginActivity : AppCompatActivity() {
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
             } else {
-                Toast.makeText(this, "NO MATCH", Toast.LENGTH_LONG).show()
+                Toast.makeText(
+                    this,
+                    "Please enter the 10 digits valid phone number",
+                    Toast.LENGTH_LONG
+                ).show()
             }
         } else {
             Toast.makeText(this, "Please enter mobile number ", Toast.LENGTH_LONG)
