@@ -1,129 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_20"
     tools:context=".views.fragments.RegisterFragment">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="@string/register_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/large_20"
+        android:textStyle="bold" />
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="@dimen/dimen_20">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:maxLines="2"
-            android:text="@string/register_title"
-            android:textColor="@color/black"
-            android:textSize="@dimen/dimen_20"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dimen_16"
-                android:gravity="center"
-                android:maxLines="2"
-                android:text="@string/fullname"
-                android:textColor="@color/black"
-                android:textSize="@dimen/dimen_16" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dimen_20"
-                android:layout_marginLeft="@dimen/dimen_5"
-                android:src="@drawable/start_impotant"/>
-
-        </LinearLayout>
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etName"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dimen_45"
-            android:layout_marginTop="@dimen/dimen_10"
-            android:background="@drawable/btn_secondary"
-            android:hint="Enter Name"
-            android:padding="@dimen/dimen_10"
-            android:textColorHint="@color/lightest_black"
-            android:textSize="@dimen/dimen_16" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dimen_16"
-                android:gravity="center"
-                android:maxLines="2"
-                android:text="@string/gender"
-                android:textColor="@color/black"
-                android:textSize="@dimen/dimen_16" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dimen_20"
-                android:layout_marginLeft="@dimen/dimen_5"
-                android:src="@drawable/start_impotant"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dimen_10"
-            android:orientation="vertical">
-
-            <RadioGroup
-                android:id="@+id/rgGender"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dimen_40"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/male"
-                    android:layout_width="@dimen/dimen_110"
-                    android:layout_height="@dimen/dimen_40"
-                    android:background="@drawable/btn_primary"
-                    android:button="@null"
-                    android:drawableStart="@drawable/male"
-                    android:gravity="center"
-                    android:checked="false"
-                    android:text="@string/male"
-                    android:padding="@dimen/dimen_10"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/dimen_16" />
-
-                <RadioButton
-                    android:id="@+id/female"
-                    android:layout_width="@dimen/dimen_110"
-                    android:layout_height="@dimen/dimen_40"
-                    android:gravity="center"
-                    android:button="@null"
-                    android:drawableStart="@drawable/female"
-                    android:layout_marginLeft="@dimen/dimen_10"
-                    android:text="@string/female"
-                    android:checked="false"
-                    android:padding="@dimen/dimen_10"
-                    android:textColor="@color/white"
-                    android:background="@drawable/btn_primary"/>
-
-            </RadioGroup>
-
-            
-        </LinearLayout>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
@@ -131,114 +28,203 @@
             android:layout_marginTop="@dimen/dimen_16"
             android:gravity="center"
             android:maxLines="2"
-            android:text="@string/email"
+            android:text="@string/fullName"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_16" />
+            android:textSize="@dimen/small_16" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etEmail"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dimen_45"
-            android:layout_marginTop="@dimen/dimen_10"
-            android:background="@drawable/btn_secondary"
-            android:hint="Enter Mail Id"
-            android:padding="@dimen/dimen_10"
-            android:textColorHint="@color/lightest_black"
-            android:textSize="@dimen/dimen_16" />
-
-        <TextView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dimen_16"
-            android:gravity="center"
-            android:maxLines="2"
-            android:text="@string/address"
-            android:textColor="@color/black"
-            android:textSize="@dimen/dimen_16" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etAddress"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dimen_80"
-            android:layout_marginTop="@dimen/dimen_10"
-            android:background="@drawable/btn_secondary"
-            android:gravity="left"
-            android:hint="@string/address"
-            android:padding="@dimen/dimen_10"
-            android:textColorHint="@color/lightest_black"
-            android:textSize="@dimen/dimen_16" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dimen_16"
-            android:gravity="center"
-            android:maxLines="2"
-            android:text="@string/pincode"
-            android:textColor="@color/black"
-            android:textSize="@dimen/dimen_16" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etPinCode"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dimen_45"
-            android:layout_marginTop="@dimen/dimen_10"
-            android:background="@drawable/btn_secondary"
-            android:hint="@string/pincode"
-            android:padding="@dimen/dimen_10"
-            android:textColorHint="@color/lightest_black"
-            android:textSize="@dimen/dimen_16" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginTop="@dimen/dimen_16"
-            android:gravity="left"
-            android:orientation="horizontal"
-            android:textColorHint="@color/lightest_black">
-
-            <ImageView
-                android:layout_width="@dimen/dimen_25"
-                android:layout_height="@dimen/dimen_25"
-                android:src="@drawable/location_symbol" />
-
-            <TextView
-                android:id="@+id/tvLocation"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/dimen_25"
-                android:layout_gravity="center"
-                android:layout_marginLeft="@dimen/dimen_10"
-                android:gravity="center"
-                android:text="@string/current_location"
-                android:textColor="@color/black"
-                android:textSize="@dimen/dimen_16" />
-
-        </LinearLayout>
-
-        <CheckBox
-            android:id="@+id/cbTerms"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/dimen_25"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/dimen_18"
-            android:buttonTint="@color/teal_700"
-            android:text="@string/agreement"
-            android:textColor="@color/black" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnRegister"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dimen_50"
-            android:layout_marginTop="@dimen/dimen_10"
-            android:background="@drawable/btn_primary"
-            android:text="Register"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="@dimen/dimen_20"
-            android:textStyle="bold" />
+            android:layout_marginStart="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:src="@drawable/start_impotant" />
 
     </LinearLayout>
 
-</FrameLayout>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/btn_secondary"
+        android:hint="Enter Name"
+        android:padding="@dimen/dimen_10"
+        android:textColorHint="@color/lightest_black"
+        android:textSize="@dimen/small_16" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/gender"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:src="@drawable/start_impotant" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="@dimen/dimen_110"
+            android:layout_height="@dimen/dimen_40"
+            android:background="@drawable/btn_primary"
+            android:button="@null"
+            android:checked="false"
+            android:drawableStart="@drawable/male"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:text="@string/male"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_16" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="@dimen/dimen_110"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:background="@drawable/btn_primary"
+            android:button="@null"
+            android:checked="false"
+            android:drawableStart="@drawable/female"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:text="@string/female"
+            android:textColor="@color/white" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_16" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/btn_secondary"
+        android:hint="Enter Mail Id"
+        android:padding="@dimen/dimen_10"
+        android:textColorHint="@color/lightest_black"
+        android:textSize="@dimen/small_16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="@string/address"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_16" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/btn_secondary"
+        android:gravity="start"
+        android:hint="@string/address"
+        android:padding="@dimen/dimen_10"
+        android:textColorHint="@color/lightest_black"
+        android:textSize="@dimen/small_16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="@string/pinCode"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_16" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etPinCode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/btn_secondary"
+        android:hint="@string/pinCode"
+        android:padding="@dimen/dimen_10"
+        android:textColorHint="@color/lightest_black"
+        android:textSize="@dimen/small_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:textColorHint="@color/lightest_black">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_25"
+            android:layout_height="@dimen/dimen_25"
+            android:src="@drawable/location_symbol" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_25"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:gravity="center"
+            android:text="@string/current_location"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_16" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cbTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_25"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_18"
+        android:buttonTint="@color/teal_700"
+        android:text="@string/agreement"
+        android:textColor="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/btn_primary"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_20"
+        android:textStyle="bold" />
+
+</LinearLayout>

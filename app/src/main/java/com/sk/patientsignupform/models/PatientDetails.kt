@@ -2,7 +2,10 @@ package com.sk.patientsignupform.models
 
 import java.io.Serializable
 
-data class PatienDetails(
+/***
+ * Data class for patient details
+ */
+data class PatientDetails(
     var name: String,
     var gender: String,
     val email: String?,

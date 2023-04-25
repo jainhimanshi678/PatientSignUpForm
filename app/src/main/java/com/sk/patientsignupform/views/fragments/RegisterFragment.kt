@@ -9,14 +9,17 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.sk.patientsignupform.R
 import com.sk.patientsignupform.databinding.FragmentRegisterBinding
-import com.sk.patientsignupform.models.PatienDetails
+import com.sk.patientsignupform.models.PatientDetails
 
 /**
  * Fragment to register the patient
  */
 class RegisterFragment : Fragment() {
 
-    lateinit var binding: FragmentRegisterBinding
+    /**
+     * Holds binding object
+     */
+    private lateinit var binding: FragmentRegisterBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -24,9 +27,12 @@ class RegisterFragment : Fragment() {
         setOnClickListener()
     }
 
+    /**
+     * Function to set on click listeners
+     */
     private fun setOnClickListener() {
         binding.btnRegister.setOnClickListener {
-            val patientDetails = PatienDetails(
+            val patientDetails = PatientDetails(
                 binding.etName.text.toString(),
                 binding.rgGender.checkedRadioButtonId.toString(),
                 binding.etEmail.toString(),
@@ -57,10 +63,6 @@ class RegisterFragment : Fragment() {
         }
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -69,12 +71,14 @@ class RegisterFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_register, container, false)
     }
 
+    /**
+     * Function to open dialog box
+     */
     private fun startAlertDialog() {
-        var builder: AlertDialog.Builder = AlertDialog.Builder(requireContext())
-        builder.setMessage(R.string.dialog_message).setTitle(R.string.dialog_title);
-        val alert = builder.create();
-        alert.setTitle("AlertDialogExample");
+        val builder: AlertDialog.Builder = AlertDialog.Builder(requireContext())
+        builder.setMessage(R.string.dialog_message).setTitle(R.string.dialog_title)
+        val alert = builder.create()
         alert.setCancelable(true)
-        alert.show();
+        alert.show()
     }
 }

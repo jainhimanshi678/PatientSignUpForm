@@ -39,4 +39,8 @@
     <dimen name="dimen_12">12dp</dimen>
     <dimen name="dimen_45">45dp</dimen>
     <dimen name="dimen_135">135dp</dimen>
+    <dimen name="small_16">16sp</dimen>
+    <dimen name="medium_18">18sp</dimen>
+    <dimen name="large_20">20sp</dimen>
+    <dimen name="heading_22">22sp</dimen>
 </resources>

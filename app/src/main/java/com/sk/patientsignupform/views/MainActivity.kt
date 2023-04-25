@@ -30,6 +30,9 @@ class MainActivity : AppCompatActivity() {
         setBottomNavigationItemSelectedListener()
     }
 
+    /**
+     * Function to switch fragment
+     */
     private fun switchFragment(fragment: Fragment) {
         mCurrentFragment = supportFragmentManager.findFragmentById(binding.flContainer.id)
         try {

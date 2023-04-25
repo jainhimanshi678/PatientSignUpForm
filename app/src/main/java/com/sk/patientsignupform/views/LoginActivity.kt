@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.sk.patientsignupform.databinding.ActivityLoginBinding
-import com.sk.patientsignupform.utils.PrefUtil
 
 class LoginActivity : AppCompatActivity() {
 
-    lateinit var binding: ActivityLoginBinding
+    /**
+     * Holds binding object
+     */
+    private lateinit var binding: ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityLoginBinding.inflate(layoutInflater)
@@ -31,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
      * Function to validate phone number
      */
     private fun validatePhoneNumber() {
-        val phone: String;
+        val phone: String
         if (binding.etPhoneNumber.text.toString().isNotEmpty()) {
             phone = binding.etPhoneNumber.text.toString().trim()
             if (android.util.Patterns.PHONE.matcher(phone).matches() && phone.length == 10) {

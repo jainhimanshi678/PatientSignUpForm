@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dimen_16"
+        android:contentDescription="@string/logIn"
         android:src="@drawable/login_image" />
 
     <TextView
@@ -25,7 +26,7 @@
         android:maxLines="2"
         android:text="@string/login_title"
         android:textColor="@color/black"
-        android:textSize="@dimen/dimen_22"
+        android:textSize="@dimen/heading_22"
         android:textStyle="bold" />
 
     <TextView
@@ -38,7 +39,7 @@
         android:gravity="center"
         android:text="@string/login_subtitle"
         android:textColor="@color/lightest_black"
-        android:textSize="@dimen/dimen_16" />
+        android:textSize="@dimen/small_16" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -59,7 +60,7 @@
             android:maxLines="2"
             android:text="@string/phone_number"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_18" />
+            android:textSize="@dimen/medium_18" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -75,19 +76,19 @@
                 android:layout_width="@dimen/dimen_135"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                app:ccp_textSize="@dimen/dimen_18"
-                android:gravity="center" />
+                android:gravity="center"
+                app:ccp_textSize="@dimen/dimen_18" />
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etPhoneNumber"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/flag_transparent"
+                android:hint="@string/phone_number_hint"
                 android:lines="1"
                 android:textColor="@color/black"
-                android:background="@drawable/flag_transparent"
                 android:textColorHint="@color/lightest_black"
-                android:hint="@string/phone_number_hint"
-                android:textSize="@dimen/dimen_18" />
+                android:textSize="@dimen/medium_18" />
 
         </LinearLayout>
 
@@ -99,11 +100,11 @@
             android:layout_marginTop="@dimen/dimen_16"
             android:layout_marginRight="@dimen/dimen_15"
             android:background="@drawable/btn_primary"
-            android:text="Log In"
+            android:text="@string/logIn"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="@dimen/dimen_20"
+            android:textSize="@dimen/large_20"
             android:textStyle="bold" />
 
     </LinearLayout>
