@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dimen_5"
-            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_22"
             android:src="@drawable/start_impotant" />
 
     </LinearLayout>
@@ -75,7 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dimen_5"
-            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_22"
             android:src="@drawable/start_impotant" />
 
     </LinearLayout>
@@ -111,6 +111,7 @@
             android:checked="false"
             android:drawableStart="@drawable/female"
             android:gravity="center"
+            android:textSize="@dimen/small_16"
             android:padding="@dimen/dimen_10"
             android:text="@string/female"
             android:textColor="@color/white" />
