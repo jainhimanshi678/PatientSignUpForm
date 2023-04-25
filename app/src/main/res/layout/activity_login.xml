@@ -76,6 +76,7 @@
                 android:layout_width="@dimen/dimen_135"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                app:ccp_textSize="@dimen/dimen_18"
                 android:gravity="center" />
 
             <com.google.android.material.textfield.TextInputEditText
@@ -84,7 +85,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/flag_transparent"
                 android:hint="@string/phone_number_hint"
-                android:textSize="@dimen/dimen_16" />
+                android:textSize="@dimen/dimen_18" />
 
         </LinearLayout>
 
