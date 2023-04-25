@@ -22,6 +22,7 @@
         android:layout_marginLeft="@dimen/dimen_25"
         android:layout_marginTop="@dimen/dimen_10"
         android:layout_marginRight="@dimen/dimen_25"
+        android:fontFamily="@font/roboto_black"
         android:gravity="center"
         android:maxLines="2"
         android:text="@string/login_title"
@@ -37,6 +38,7 @@
         android:layout_marginTop="@dimen/dimen_16"
         android:layout_marginRight="@dimen/dimen_18"
         android:gravity="center"
+        android:fontFamily="@font/roboto_medium"
         android:text="@string/login_subtitle"
         android:textColor="@color/lightest_black"
         android:textSize="@dimen/small_16" />
@@ -58,6 +60,7 @@
             android:layout_marginRight="@dimen/dimen_25"
             android:gravity="center"
             android:maxLines="2"
+            android:fontFamily="@font/roboto_medium"
             android:text="@string/phone_number"
             android:textColor="@color/black"
             android:textSize="@dimen/medium_18" />
@@ -86,6 +89,7 @@
                 android:background="@drawable/flag_transparent"
                 android:hint="@string/phone_number_hint"
                 android:lines="1"
+                android:fontFamily="@font/roboto_medium"
                 android:textColor="@color/black"
                 android:textColorHint="@color/lightest_black"
                 android:textSize="@dimen/medium_18" />
