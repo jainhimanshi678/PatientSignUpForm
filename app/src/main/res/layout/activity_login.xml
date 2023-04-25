@@ -34,11 +34,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginLeft="@dimen/dimen_18"
+        android:layout_marginLeft="@dimen/dimen_8"
         android:layout_marginTop="@dimen/dimen_16"
-        android:layout_marginRight="@dimen/dimen_18"
+        android:layout_marginRight="@dimen/dimen_8"
         android:gravity="center"
-        android:fontFamily="@font/roboto_medium"
         android:text="@string/login_subtitle"
         android:textColor="@color/lightest_black"
         android:textSize="@dimen/small_16" />
